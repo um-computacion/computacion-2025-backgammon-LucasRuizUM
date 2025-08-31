@@ -4,6 +4,9 @@ class Board:
     def __init__(self):
         self.__points__ = [[] for _ in range(24)]
 
+    def get_points(self):
+        return self.__points__
+
     def setup_initial_positions(self):
           self.__points__[23] = [Checker("white") for _ in range(2)]  
           self.__points__[12] = [Checker("white") for _ in range(5)]  
